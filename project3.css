@@ -1,18 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
 
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-    
+
 }
 
-p{
+p {
     font-weight: 300;
     line-height: 1.5;
-    
+
 }
 
 
@@ -22,7 +22,7 @@ p{
 
 
 
-.banner{
+.banner {
     position: relative;
     width: 100%;
     min-height: 100vh;
@@ -31,39 +31,40 @@ p{
     align-items: center;
     background: url(https://i.postimg.cc/YS7JpTG1/bowl-vegetable-salad-black-background-51137-368.jpg);
     background-size: cover;
-   
+
 }
 
-.banner .content{
+.banner .content {
     max-width: 900px;
     text-align: center;
 }
 
-.banner .content h2{
- font-size: 5em;
+.banner .content h2 {
+    font-size: 5em;
     color: #fff;
 }
 
-.banner .content p{
+.banner .content p {
     font-size: 1em;
     color: #fff;
 }
 
-.btn{
+.btn {
     font-size: 1em;
     color: #fff;
     background: #ff0157;
-    display:inline-block;
+    display: inline-block;
     padding: 10px 30px;
     margin-top: 20px;
     text-transform: uppercase;
     text-decoration: none;
     letter-spacing: 2px;
-    transition: 0.5s;  
+    transition: 0.5s;
 }
 
-.btn:hover{
-    letter-spacing: 6px;}
+.btn:hover {
+    letter-spacing: 6px;
+}
 
 
 
@@ -72,7 +73,7 @@ p{
 
 
 
-header{
+header {
     position: sticky;
     top: 0;
     left: 0;
@@ -81,14 +82,14 @@ header{
     z-index: 10;
     display: flex;
     justify-content: space-between;
-    align-items:center;
+    align-items: center;
     transition: 0.5s;
-    background-color:rgba(70, 68, 68, 0.48);
+    background-color: rgba(70, 68, 68, 0.48);
 }
 
 
 
-header .logo{
+header .logo {
     color: #fff;
     font-weight: 700;
     font-size: 2em;
@@ -97,28 +98,29 @@ header .logo{
 
 
 
-header .logo span{
+header .logo span {
     color: #ff0157;
+    font-size: 1.2em;
 }
 
-header .navigation{
+header .navigation {
     position: relative;
     display: flex;
 }
 
-header .navigation li{
+header .navigation li {
     list-style: none;
     margin-left: 30px;
 }
 
-header .navigation li a{
+header .navigation li a {
     text-decoration: none;
     color: #fff;
     font-weight: 300;
     font-size: 2em;
 }
 
-header .navigation li a:hover{
+header .navigation li a:hover {
     color: #ff0157;
 }
 
@@ -133,7 +135,7 @@ section {
     padding: 100px;
 }
 
-.row{
+.row {
     position: relative;
     width: 100%;
     display: flex;
@@ -141,34 +143,34 @@ section {
 
 }
 
-.row .col50{
+.row .col50 {
     position: relative;
     width: 48%;
-    height: 100%; 
-  
+    height: 100%;
+
 }
 
 
-.col50  .titletext {
+.col50 .titletext {
     color: #111;
-    font-size: 2em;
+    font-size: 3em;
     font-weight: 300;
 }
 
 
-.titletext span{
+.titletext span {
     color: #ff0157;
     font-weight: 700;
     font-size: 1.5em;
 }
 
-.row .col50 .imgbx{
+.row .col50 .imgbx {
     position: relative;
     width: 100%;
-    min-height: 600px;  
+    min-height: 600px;
 }
 
-.row .col50 .imgbx img{
+.row .col50 .imgbx img {
     position: absolute;
     top: 0;
     left: 0;
@@ -176,7 +178,7 @@ section {
     height: 600px;
     object-fit: cover;
 }
-   
+
 
 
 
@@ -184,8 +186,141 @@ section {
 
 
 
-.title{
+.title {
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 1.5em;
+}
+
+
+
+
+.container1 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 40px;
+}
+
+.menu .container1 .box {
+    width: 25%;
+    margin: 20px;
+    border: 15px solid #fff;
+    box-shadow: 0 5px 35px rgba(0, 0, 0, 0.08)
+}
+
+
+.menu .container1 .box .imgbx {
+    position: relative;
+    width: 100%;
+    height: 300px;
+}
+
+
+.menu .container1 .box .imgbx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.menu .container1 .box .text {
+    padding: 15px 0 5px;
+}
+
+
+.menu .container1 .box .text h3 {
+    font-weight: 400;
+    color: #111;
+}
+
+
+
+/*......Expert part start...*/
+
+
+
+.expert .container2 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 40px;
+
+}
+
+.expert .container2 .box {
+    width: 260px;
+    margin: 15px;
+}
+
+
+.expert .container2 .box .imgbx {
+    position: relative;
+    width: 100%;
+    height: 300px;
+}
+
+
+.expert .container2 .box .imgbx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.expert .container2 .box .text {
+    padding: 15px 0 5px;
+}
+
+
+.expert .container2 .box .text h3 {
+    font-weight: 400;
+    color: #111;
+}
+
+
+
+/*......testimonials part start...*/
+
+
+
+.testimonials {
+    background-image: url(https://i.postimg.cc/4yns2TJv/images-13.jpg);
+    background-size: cover;
+}
+
+.white .titletext,
+.white p {
+    color: #fff;
+
+}
+
+.testimonials .container3 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 40px;
+}
+
+
+
+
+.testimonials .container3 .box {
+    width: 340px;
+    margin: 20px;
+    padding: 40px;
+    background: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -193,64 +328,135 @@ section {
 }
 
 
+.testimonials .container3 .box .imgbx {
 
+    position: relative;
+    width: 120px;
+    height: 120px;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    overflow: hidden;
 
- .title .content{
-    display: flex;
-    justify-content: center;
-    flex-direction:row-reverse;
-    flex-wrap:wrap;
-    margin-top: 40px;
-}
-
-.menu .content .box{
-    width: 340px;
-    margin: 20px;
-    border: 15px solid #fff;
-    box-shadow: 0 5px 35px rgba(0,0,0,0.08)
 }
 
 
-.menu .content .box .imgbx{
-   position: relative;
-    width: 100%;
-    height: 300px;
-}
 
 
-.menu .content .box .imgbx img{
+.testimonials .container3 .box .imgbx img {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover; 
+    object-fit: cover;
+
+
 }
 
 
-.menu .content .box .text{
-    padding: 15px 0 5px;
+.testimonials .container3 .box .text {
+    text-align: center;
+}
+
+.testimonials .container3 .box .text p {
+    color: #666;
+    font-style: italic;
+}
+
+.testimonials .container3 .box .text h3 {
+    color: #ff0157;
+    margin-top: 20px;
+    font-size: 1em;
+    font-weight: 600;
+
+
 }
 
 
-.menu .content .box .text h3{
-    font-weight: 400;
+/*......contact us part start...*/
+
+
+.contact {
+    background-image: url(https://i.postimg.cc/K8PHsQq4/tomato-pasta-517276.jpg);
+    background-size: cover;
+}
+
+.contactform {
+    padding: 75px 80px;
+    background: #fff;
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.1);
+    max-width: 700px;
+    height: 550px;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.contactform h3 {
     color: #111;
+    font-size: 1.5em;
+    margin-bottom: 30px;
+    font-weight: 500;
+}
+
+.contactform .inputbox {
+    position: relative;
+    width: 80%;
+    margin-bottom: 20px;
+    margin-left: 50px;
+
+}
+
+.contactform .inputbox input,
+.contactform .inputbox textarea {
+    width: 100%;
+    border: 1px solid #555;
+    padding: 15px;
+    color: #111;
+    outline: none;
+    font-size: 18px;
+    font-weight: 300;
+    resize: none;
+    text-align: center;
 }
 
 
+.contactform .inputbox .submit {
+
+    font-size: 1em;
+    color: #fff;
+    background: #ff0157;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0.5s;
+    max-width: 100px;
+    border: none;
+    font-weight: 500;
+    display: inline-block;
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
 
 
+/*......copyRight us part start...*/
 
 
+.Copyright {
+    padding: 20px 40px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    text-align: center;
+
+}
 
 
+.Copyright p {
+    color: #333;
+    font-size: 1.5em;
+}
 
-
-
-
-
-
-
-
-
+.Copyright a {
+    color: #ff0157;
+    font-weight: 500;
+    text-decoration: none;
+}
